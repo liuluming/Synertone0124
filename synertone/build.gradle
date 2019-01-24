@@ -1,0 +1,90 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.neenbedankt.android-apt'
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    //buildToolsVersion rootProject.ext.android.buildToolsVersion
+    // useLibrary 'org.apache.http.legacy'
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+    defaultConfig {
+        applicationId rootProject.ext.android.applicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+        buildConfigField "String", "BUILD_TIME", getDate()
+
+        //multiDexEnabled true
+        configurations.all {
+            resolutionStrategy {
+                force "com.android.support:appcompat-v7:${rootProject.ext.dependVersion.support}"
+                force "com.android.support:support-v4:${rootProject.ext.dependVersion.supportv4}"
+            }
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+        }
+    }
+
+}
+
+String getDate() {
+    Date date = new Date()
+    String dates = "\"" + date.format("yyyy-MM-dd HH:mm", TimeZone.getDefault()) + "\""
+    return dates
+}
+
+dependencies {
+    implementation project(':initActivity')
+    implementation project(':ripplelayoutmaster')
+    implementation project(':slidingmenu_library')
+    implementation project(':pullToRefreshLibrary')
+    implementation files('libs/aacdecoder-android-0.6.1.jar')
+    implementation files('libs/achartengine-1.1.0.jar')
+    implementation files('libs/baidumapapi_base_v3_6_1.jar')
+    implementation files('libs/baidumapapi_cloud_v3_6_1.jar')
+    implementation files('libs/baidumapapi_map_v3_6_1.jar')
+    implementation files('libs/baidumapapi_radar_v3_6_1.jar')
+    implementation files('libs/baidumapapi_search_v3_6_1.jar')
+    implementation files('libs/baidumapapi_util_v3_6_1.jar')
+    implementation files('libs/bugly_1.2.7_release.jar')
+    implementation files('libs/edit_lib.jar')
+    implementation files('libs/ForwardingDevelopmentTools_ver_1.0_release.jar')
+    implementation files('libs/lib51see.jar')
+    implementation files('libs/litepal-1.5.1.jar')
+    implementation files('libs/locSDK_6.13.jar')
+    implementation files('libs/uk.jar')
+    implementation files('libs/voaacencoder.jar')
+    implementation files('libs/volley.jar')
+    implementation files('libs/xUtils-2.6.14.jar')
+    implementation files('libs/zxing.jar')
+    implementation files('libs/log4j-1.2.17.jar')
+    implementation files('libs/android-logging-log4j-1.0.3.jar')
+    implementation project(':common-util')
+    implementation rootProject.ext.dependencies["appcompat-v7"]
+    implementation rootProject.ext.dependencies["design"]
+    implementation rootProject.ext.dependencies["gson"]
+    implementation rootProject.ext.dependencies["CustomViewBgUi"]
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    implementation rootProject.ext.dependencies["fragmentation"]
+    implementation rootProject.ext.dependencies["BaseRecyclerViewAdapterHelper"]
+    implementation rootProject.ext.dependencies["SmartTable"]
+    implementation rootProject.ext.dependencies["align-text-view"]
+    //noinspection GradleCompatible
+    implementation rootProject.ext.dependencies["recyclerview-v7"]
+    implementation rootProject.ext.dependencies["support-v4"]
+    implementation 'org.apache.commons:commons-lang3:3.8.1'
+}

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+    <include layout="@layout/top_bar_layout_right" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_100PX"
+            android:background="#E0E0E0"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/bar_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@string/myfont"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="调制解调器安装"
+                android:textColor="@color/fontcolor"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="安装过程大约需要几分钟，请耐心等待"
+                android:textColor="@color/modemcolor"
+                android:textSize="@dimen/DIMEN_30PX" />
+            <TextView
+                android:id="@+id/tv_instep"
+                android:layout_width="match_parent"
+                android:layout_marginTop="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="步骤1/4"
+                android:textColor="@color/modemcolor"
+                android:textSize="@dimen/DIMEN_30PX" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <ProgressBar
+                android:id="@+id/pb_install_progressbar"
+                style="@style/StyleProgressBarMini"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="4"
+                android:background="@drawable/shape_progressbar_bg"
+                android:max="100"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/DIMEN_10PX"
+                android:layout_weight="1"
+                android:fontFamily="@string/myfont"
+                android:text="0%"
+                android:textColor="@color/modemcolor"
+                android:textSize="@dimen/DIMEN_28PX" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/DIMEN_20PX"
+            android:layout_marginTop="50dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="注意：安装过程中，调制解调器将重新启动。在安装完成之前，不要关闭或刷新此页面！"
+                android:textColor="#FF0000"
+                android:textSize="@dimen/DIMEN_25PX" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

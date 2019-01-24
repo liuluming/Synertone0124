@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_top_bar_right"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bar_height"
+    android:clickable="true"
+    android:background="#3399ff">
+
+    <ImageButton
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:background="@drawable/running_nav_icon_back"
+        android:onClick="oneKeyStarOnFinish" />
+
+    <TextView
+        android:id="@+id/tv_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_back"
+        android:fontFamily="@string/myfont"
+        android:text="@string/one_key_star"
+        android:textColor="#fff"
+        android:textSize="@dimen/DIMEN_34PX" />
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:fontFamily="@string/myfont"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="28dp"
+        android:textColor="#fff"
+        android:textSize="@dimen/DIMEN_34PX"
+        android:text="下一步" />
+</RelativeLayout>

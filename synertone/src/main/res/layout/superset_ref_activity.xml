@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <include layout="@layout/top_bar_layout" />
+
+    <ScrollView
+        android:id="@+id/scrollview_compass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_bottom_panel"
+        android:layout_marginTop="@dimen/bar_height">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_compass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_100PX"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_compass"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_10PX"
+                    android:layout_weight="5"
+                    android:fontFamily="@string/myfont"
+                    android:text="电子罗盘"
+                    android:textColor="@color/fontcolor"
+                    android:textSize="@dimen/DIMEN_30PX" />
+
+                <com.came.viewbguilib.ButtonBgUi
+                    android:id="@+id/bt_compass"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="校准"
+                    android:textColor="@color/dialog_ok_selector"
+                    android:textSize="@dimen/DIMEN_28PX"
+                    app:defaultColor="@color/white"
+                    app:isRipple="false"
+                    app:pressedColor="@color/dialog_ok"
+                    app:raoundRadius="5dp"
+                    app:strokeColor="@color/dialog_ok"
+                    app:strokeWidth="1dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/shape_divider"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:background="#E0E0E0"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="4"
+                        android:fontFamily="@string/myfont"
+                        android:gravity="center_vertical"
+                        android:text="对星参数设置"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <com.came.viewbguilib.ButtonBgUi
+                        android:id="@+id/bt_save_default"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="设为默认"
+                        android:textColor="@color/dialog_ok_selector"
+                        android:textSize="@dimen/DIMEN_28PX"
+                        app:defaultColor="@color/white"
+                        app:isRipple="false"
+                        app:pressedColor="@color/dialog_ok"
+                        app:raoundRadius="5dp"
+                        app:strokeColor="@color/dialog_ok"
+                        app:strokeWidth="1dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_satellite_number"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/DIMEN_10PX"
+                        android:layout_weight="5"
+                        android:fontFamily="@string/myfont"
+                        android:text="卫星编号"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+
+                    <EditText
+                        android:id="@+id/et_satellite_number"
+                        android:layout_width="@dimen/DIMEN_180PX"
+                        android:layout_height="@dimen/DIMEN_70PX"
+                        android:layout_marginRight="@dimen/DIMEN_10PX"
+                        android:background="@drawable/superset_kongbai"
+                        android:drawableRight="@drawable/iv_spinner_arrow1"
+                        android:fontFamily="@string/myfont"
+                        android:gravity="center"
+                        android:imeOptions="flagNoExtractUi"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_satellite_longitude"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/myfont"
+                        android:text="卫星经度"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+
+                    <Spinner
+                        android:id="@+id/sp_longitude_type"
+                        style="@style/spinner_style"
+                        android:layout_width="@dimen/DIMEN_180PX"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/DIMEN_10PX"
+                        android:entries="@array/onestart_spinner"
+                        android:spinnerMode="dropdown" />
+
+                    <EditText
+                        android:id="@+id/et_satellite_longitude"
+                        android:layout_width="@dimen/DIMEN_180PX"
+                        android:layout_height="@dimen/DIMEN_70PX"
+                        android:layout_marginRight="@dimen/DIMEN_10PX"
+                        android:background="@drawable/superset_kongbai"
+                        android:ellipsize="end"
+                        android:fontFamily="@string/myfont"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="6"
+                        android:maxLines="1"
+                        android:text="--"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="2dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tv_mobility_support"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/DIMEN_10PX"
+                            android:layout_weight="1"
+                            android:fontFamily="@string/myfont"
+                            android:text="移动性支持"
+                            android:textColor="@color/fontcolor"
+                            android:textSize="@dimen/DIMEN_30PX" />
+
+                        <ToggleButton
+                            android:id="@+id/tb_mobility_support_switch"
+                            android:layout_width="55dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/DIMEN_10PX"
+                            android:background="@drawable/selector_super_set_choose"
+                            android:checked="false"
+                            android:textOff=""
+                            android:textOn="" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_aim_satellite_mode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/myfont"
+                        android:text="对星方式"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+
+                    <com.my51c.see51.widget.ReSpinner
+                        android:id="@+id/sp_aim_satellite_mode"
+                        style="@style/spinner_style"
+                        android:layout_width="@dimen/DIMEN_180PX"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/DIMEN_10PX"
+                        android:entries="@array/vsat_mode"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_aim_satellite_frequency"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_aim_satellite_frequency"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/myfont"
+                        android:text="对星频率(MHz)"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+
+                    <EditText
+                        android:id="@+id/et_aim_satellite_frequency"
+                        android:layout_width="@dimen/DIMEN_180PX"
+                        android:layout_height="@dimen/DIMEN_70PX"
+                        android:layout_marginRight="@dimen/DIMEN_10PX"
+                        android:background="@drawable/superset_kongbai"
+                        android:fontFamily="@string/myfont"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_zai_bo_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_zai_bo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/myfont"
+                        android:text="对星频率(MHz)"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+
+                    <EditText
+                        android:id="@+id/et_zai_bo_frequency"
+                        android:layout_width="@dimen/DIMEN_180PX"
+                        android:layout_height="@dimen/DIMEN_70PX"
+                        android:layout_marginRight="@dimen/DIMEN_10PX"
+                        android:background="@drawable/superset_kongbai"
+                        android:ellipsize="end"
+                        android:fontFamily="@string/myfont"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="8"
+                        android:text="--"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_zai_bo_bandwidth"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_zai_bo_bandwidth"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/myfont"
+                        android:text="载波带宽"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+
+                    <Spinner
+                        android:id="@+id/sp_zai_bo_bandwidth"
+                        style="@style/spinner_style"
+                        android:layout_width="@dimen/DIMEN_180PX"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/DIMEN_10PX"
+                        android:entries="@array/ref_bandwidth"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_center_frequency"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_center_frequency"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/myfont"
+                        android:text="中心频率(MHz)"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+
+                    <EditText
+                        android:id="@+id/et_center_frequency"
+                        android:layout_width="@dimen/DIMEN_180PX"
+                        android:layout_height="@dimen/DIMEN_70PX"
+                        android:layout_marginRight="@dimen/DIMEN_10PX"
+                        android:background="@drawable/superset_kongbai"
+                        android:fontFamily="@string/myfont"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="8"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_symbol_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_symbol_rate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/myfont"
+                        android:text="符号率"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+
+                    <EditText
+                        android:id="@+id/et_symbol_rate"
+                        android:layout_width="@dimen/DIMEN_180PX"
+                        android:layout_height="@dimen/DIMEN_70PX"
+                        android:layout_marginRight="@dimen/DIMEN_10PX"
+                        android:background="@drawable/superset_kongbai"
+                        android:fontFamily="@string/myfont"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="8"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_polarization_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/myfont"
+                        android:text="极化方式"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+
+                    <Spinner
+                        android:id="@+id/sp_polarization_type"
+                        style="@style/spinner_style"
+                        android:layout_width="@dimen/DIMEN_180PX"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/DIMEN_10PX"
+                        android:entries="@array/receive_polarization"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:background="#E0E0E0"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="4"
+                        android:fontFamily="@string/myfont"
+                        android:gravity="center_vertical"
+                        android:text="天线参数设置"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <com.came.viewbguilib.ButtonBgUi
+                        android:id="@+id/bt_antenna_stop"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="@string/button_line_stop"
+                        android:textColor="@color/dialog_ok_selector"
+                        android:textSize="@dimen/DIMEN_28PX"
+                        app:defaultColor="@color/white"
+                        app:isRipple="false"
+                        app:pressedColor="@color/dialog_ok"
+                        app:raoundRadius="5dp"
+                        app:strokeColor="@color/dialog_ok"
+                        app:strokeWidth="1dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_location_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/myfont"
+                        android:text="定位方式"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+
+                    <Spinner
+                        android:id="@+id/sp_location_type"
+                        style="@style/spinner_style"
+                        android:layout_width="@dimen/DIMEN_180PX"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/DIMEN_10PX"
+                        android:entries="@array/advpar_locatemode"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_current_lon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/myfont"
+                        android:text="当前经度"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+
+                    <Spinner
+                        android:id="@+id/sp_current_lon_type"
+                        style="@style/spinner_style"
+                        android:layout_width="@dimen/DIMEN_180PX"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/DIMEN_10PX"
+                        android:entries="@array/onestart_spinner"
+                        android:spinnerMode="dropdown" />
+
+                    <EditText
+                        android:id="@+id/et_current_lon"
+                        android:layout_width="@dimen/DIMEN_180PX"
+                        android:layout_height="@dimen/DIMEN_70PX"
+                        android:layout_marginRight="@dimen/DIMEN_10PX"
+                        android:background="@drawable/superset_kongbai"
+                        android:digits="0123456789."
+                        android:fontFamily="@string/myfont"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_current_lat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/myfont"
+                        android:text="当前纬度"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+
+                    <Spinner
+                        android:id="@+id/sp_current_lat_type"
+                        style="@style/spinner_style"
+                        android:layout_width="@dimen/DIMEN_180PX"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/DIMEN_10PX"
+                        android:entries="@array/onestart_spinner"
+                        android:spinnerMode="dropdown" />
+
+                    <EditText
+                        android:id="@+id/et_current_lat"
+                        android:layout_width="@dimen/DIMEN_180PX"
+                        android:layout_height="@dimen/DIMEN_70PX"
+                        android:layout_marginRight="@dimen/DIMEN_10PX"
+                        android:background="@drawable/superset_kongbai"
+                        android:digits="0123456789."
+                        android:fontFamily="@string/myfont"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_rth"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/myfont"
+                        android:text="RTH门限"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+
+                    <EditText
+                        android:id="@+id/et_rth"
+                        android:layout_width="@dimen/DIMEN_180PX"
+                        android:layout_height="@dimen/DIMEN_70PX"
+                        android:layout_marginRight="@dimen/DIMEN_10PX"
+                        android:background="@drawable/superset_kongbai"
+                        android:digits="0123456789"
+                        android:fontFamily="@string/myfont"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_rsd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/myfont"
+                        android:text="RSD门限"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+
+                    <EditText
+                        android:id="@+id/et_rsd"
+                        android:layout_width="@dimen/DIMEN_180PX"
+                        android:layout_height="@dimen/DIMEN_70PX"
+                        android:layout_marginRight="@dimen/DIMEN_10PX"
+                        android:background="@drawable/superset_kongbai"
+                        android:digits="0123456789."
+                        android:fontFamily="@string/myfont"
+                        android:gravity="center"
+                        android:maxLength="6"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_pitch_compensation_angle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/myfont"
+                        android:text="俯仰补偿角"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+
+                    <EditText
+                        android:id="@+id/et_pitch_compensation_angle"
+                        android:layout_width="@dimen/DIMEN_180PX"
+                        android:layout_height="@dimen/DIMEN_70PX"
+                        android:layout_marginRight="@dimen/DIMEN_10PX"
+                        android:background="@drawable/superset_kongbai"
+                        android:digits="-0123456789."
+                        android:fontFamily="@string/myfont"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_lnb_local_oscillator"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/myfont"
+                        android:text="LNB本振"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+                    <EditText
+                        android:id="@+id/et_lnb_local_oscillator"
+                        android:layout_width="@dimen/DIMEN_180PX"
+                        android:layout_height="@dimen/DIMEN_70PX"
+                        android:layout_marginRight="@dimen/DIMEN_10PX"
+                        android:background="@drawable/superset_kongbai"
+                        android:digits="0123456789"
+                        android:drawableRight="@drawable/iv_spinner_arrow1"
+                        android:fontFamily="@string/myfont"
+                        android:gravity="center"
+                        android:imeOptions="flagNoExtractUi"
+                        android:maxLength="8"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_buc_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tv_buc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/myfont"
+                        android:text="BUC类型"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+
+                    <Spinner
+                        android:id="@+id/sp_buc_type"
+                        style="@style/spinner_style"
+                        android:layout_width="@dimen/DIMEN_180PX"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/DIMEN_10PX"
+                        android:entries="@array/receive_polarization"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_buc_switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tv_buc_switch"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/myfont"
+                        android:text="BUC开关"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+
+                    <ToggleButton
+                        android:id="@+id/tb_buc_switch"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/DIMEN_10PX"
+                        android:background="@drawable/selector_super_set_choose"
+                        android:checked="false"
+                        android:textOff=""
+                        android:textOn="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_buc_local_oscillator"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tv_buc_local_oscillator"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/myfont"
+                        android:text="BUC本振"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+
+                    <EditText
+                        android:id="@+id/et_buc_local_oscillator"
+                        android:layout_width="@dimen/DIMEN_180PX"
+                        android:layout_height="@dimen/DIMEN_70PX"
+                        android:layout_marginRight="@dimen/DIMEN_10PX"
+                        android:background="@drawable/superset_kongbai"
+                        android:digits="0123456789"
+                        android:drawableRight="@drawable/iv_spinner_arrow1"
+                        android:fontFamily="@string/myfont"
+                        android:gravity="center"
+                        android:imeOptions="flagNoExtractUi"
+                        android:maxLength="8"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_buc_gain_attenuation"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tv_buc_gain_attenuation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/DIMEN_10PX"
+                        android:layout_weight="5"
+                        android:fontFamily="@string/myfont"
+                        android:text="BUC增益衰减值"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+
+                    <EditText
+                        android:id="@+id/et_buc_gain_attenuation"
+                        android:layout_width="@dimen/DIMEN_180PX"
+                        android:layout_height="@dimen/DIMEN_70PX"
+                        android:layout_marginRight="@dimen/DIMEN_10PX"
+                        android:background="@drawable/superset_kongbai"
+                        android:digits="0123456789."
+                        android:fontFamily="@string/myfont"
+                        android:gravity="center"
+                        android:imeOptions="flagNoExtractUi"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#E0E0E0">
+
+                <LinearLayout
+                    android:id="@+id/ll_network_detection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tv_network_detection"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/DIMEN_10PX"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/myfont"
+                        android:text="网络检测开关"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="@dimen/DIMEN_30PX" />
+
+                    <ToggleButton
+                        android:id="@+id/tb_network_detection_switch"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/DIMEN_10PX"
+                        android:background="@drawable/selector_super_set_choose"
+                        android:checked="false"
+                        android:textOff=""
+                        android:textOn="" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_debug_model"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_100PX"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/tiaoshimoshi_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_tiaoshikongzhi" />
+
+                <TextView
+                    android:id="@+id/tv_debug_model"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="6"
+                    android:fontFamily="@string/myfont"
+                    android:text="调试模式"
+                    android:textColor="@color/fontcolor"
+                    android:textSize="@dimen/DIMEN_30PX" />
+                <ImageView
+                    android:id="@+id/iv_right_arrow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/come_btn" />
+
+                <!--<ImageView
+                    android:id="@+id/iv_right_arrow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/back_compass"
+                    android:rotation="180" />-->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.came.viewbguilib.ButtonBgUi
+            android:id="@+id/bt_save"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/button_save"
+            android:textColor="@color/dialog_cancel_selector"
+            android:textSize="@dimen/DIMEN_30PX"
+            app:defaultColor="@color/white"
+            app:isRipple="false"
+            app:pressedColor="@color/dialog_ok" />
+
+        <com.came.viewbguilib.ButtonBgUi
+            android:id="@+id/bt_aim_satellite"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="对星"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_30PX"
+            app:defaultColor="@color/dialog_ok"
+            app:isRipple="false" />
+    </LinearLayout>
+</RelativeLayout>

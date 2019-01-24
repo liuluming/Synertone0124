@@ -1,0 +1,169 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/running_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/running_bg"
+        android:orientation="vertical"
+        tools:context="com.my51see.see51.OneKeyStarActivity">
+
+        <include layout="@layout/top_bar_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/star_choosestar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_10PX"
+                android:layout_weight="5"
+                android:fontFamily="@string/myfont"
+                android:text="已选卫星"
+                android:textColor="@color/fontcolor"
+                android:textSize="@dimen/DIMEN_30PX" />
+            <TextView
+                android:id="@+id/onekeystar_num"
+                android:layout_width="@dimen/DIMEN_180PX"
+                android:layout_height="@dimen/DIMEN_70PX"
+                android:layout_marginRight="@dimen/DIMEN_10PX"
+                android:fontFamily="@string/myfont"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="协同一号"
+                android:textColor="@color/fontcolor"
+                android:textSize="@dimen/DIMEN_30PX"  />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_star_connection_loading"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/onekeystar_iv_beforeduixing" />
+        <com.came.viewbguilib.ButtonBgUi
+            android:id="@+id/onekeystar_btn_duixing_progress"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/DIMEN_40PX"
+            android:text="刷新"
+            android:gravity="center"
+            android:textSize="@dimen/DIMEN_30PX"
+            android:textColor="@color/white"
+            app:defaultColor="@color/dialog_ok"
+            android:clickable="true"
+            app:isRipple="false"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/onekeystar_progerss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_80PX"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/onekeystar_ll_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/receice_level"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="2.5"
+                    android:fontFamily="@string/myfont"
+                    android:text="接收电平值"
+                    android:textColor="@color/fontcolor"
+                    android:textSize="@dimen/DIMEN_30PX" />
+
+                <ProgressBar
+                    android:id="@+id/pb_progressbar"
+                    style="@style/StyleProgressBarMini"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/shape_progressbar_bg"
+                    android:max="100"
+                    android:progress="0" />
+
+                <TextView
+                    android:id="@+id/tv_receive_level"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/DIMEN_10PX"
+                    android:layout_weight="2"
+                    android:fontFamily="@string/myfont"
+                    android:text="0 dB"
+                    android:textColor="@color/fontcolor"
+                    android:textSize="@dimen/DIMEN_28PX" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_80PX"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/onekeystar_ll_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/capability"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="2.5"
+                    android:fontFamily="@string/myfont"
+                    android:text="发射电平值"
+                    android:textColor="@color/fontcolor"
+                    android:textSize="@dimen/DIMEN_30PX" />
+
+                <ProgressBar
+                    android:id="@+id/pb_progressbar1"
+                    style="@style/StyleProgressBarMini"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/shape_progressbar_bg"
+                    android:max="100"
+                    android:progress="0" />
+
+                <TextView
+                    android:id="@+id/tv_capability"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/DIMEN_10PX"
+                    android:layout_weight="2"
+                    android:fontFamily="@string/myfont"
+                    android:text="0 dB"
+                    android:textColor="@color/fontcolor"
+                    android:textSize="@dimen/DIMEN_28PX" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\APP\\WYZS\\02_Android\\CODE\\trunk\\STUDIO\\v_3_1\\src-app\\synertone\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-it\\values-it.xml",
+            "map": [
+                {
+                    "source": "D:\\APP\\WYZS\\02_Android\\CODE\\trunk\\STUDIO\\v_3_1\\src-app\\pullToRefreshLibrary\\build\\intermediates\\packaged_res\\debug\\values-it\\values-it.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,131,205",
+                        "endColumns": "75,73,81",
+                        "endOffsets": "126,200,282"
+                    },
+                    "to": {
+                        "startLines": "15,16,17",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "1441,1517,1591",
+                        "endColumns": "75,73,81",
+                        "endOffsets": "1512,1586,1668"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\snt1206\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-22.2.1.aar\\8ecc7ba36498f17ea0995af399ed8b6b\\res\\values-it\\values-it.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "291,400,500,609,693,802,927,1033,1141,1239,1343,1448,1555",
+                        "endColumns": "108,99,108,83,108,124,105,107,97,103,104,106,121",
+                        "endOffsets": "395,495,604,688,797,922,1028,1136,1234,1338,1443,1550,1672"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,164,264,373,457,566,691,797,905,1003,1107,1212,1319",
+                        "endColumns": "108,99,108,83,108,124,105,107,97,103,104,106,121",
+                        "endOffsets": "159,259,368,452,561,686,792,900,998,1102,1207,1314,1436"
+                    }
+                }
+            ]
+        }
+    ]
+}

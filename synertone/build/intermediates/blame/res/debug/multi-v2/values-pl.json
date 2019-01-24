@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\APP\\WYZS\\02_Android\\CODE\\trunk\\STUDIO\\v_3_1\\src-app\\synertone\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pl\\values-pl.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\snt1206\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-22.2.1.aar\\8ecc7ba36498f17ea0995af399ed8b6b\\res\\values-pl\\values-pl.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "291,407,509,617,703,812,931,1040,1149,1248,1357,1468,1576",
+                        "endColumns": "115,101,107,85,108,118,108,108,98,108,110,107,122",
+                        "endOffsets": "402,504,612,698,807,926,1035,1144,1243,1352,1463,1571,1694"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,171,273,381,467,576,695,804,913,1012,1121,1232,1340",
+                        "endColumns": "115,101,107,85,108,118,108,108,98,108,110,107,122",
+                        "endOffsets": "166,268,376,462,571,690,799,908,1007,1116,1227,1335,1458"
+                    }
+                },
+                {
+                    "source": "D:\\APP\\WYZS\\02_Android\\CODE\\trunk\\STUDIO\\v_3_1\\src-app\\pullToRefreshLibrary\\build\\intermediates\\packaged_res\\debug\\values-pl\\values-pl.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,136,210",
+                        "endColumns": "80,73,78",
+                        "endOffsets": "131,205,284"
+                    },
+                    "to": {
+                        "startLines": "15,16,17",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "1463,1544,1618",
+                        "endColumns": "80,73,78",
+                        "endOffsets": "1539,1613,1692"
+                    }
+                }
+            ]
+        }
+    ]
+}

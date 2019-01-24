@@ -1,0 +1,1 @@
+[{"outputType":{"type":"MERGED_MANIFESTS"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":17,"versionName":"1.5.0","enabled":true,"outputFile":"synertone-debug.apk","fullName":"debug","baseName":"debug"},"path":"AndroidManifest.xml","properties":{"packageId":"com.synertone.netAssistant","split":"","minSdkVersion":"16"}}]

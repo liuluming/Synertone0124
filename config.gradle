@@ -1,0 +1,87 @@
+ext {
+
+    android = [
+            compileSdkVersion: 22,
+            buildToolsVersion: '22.0.0',
+            applicationId    : "com.synertone.netAssistant",
+            minSdkVersion    : 16,
+            targetSdkVersion : 22,
+            versionCode      : 17,
+            versionName      : "1.5.0"
+    ]
+
+    dependVersion = [
+            support         : "22.2.1",
+            supportv4       : "25.1.0",
+            recyclerview    : "25.1.0",
+            retrofit        : "2.4.0",
+            okhttp          : "3.11.0",
+            dagger2         : "2.16",
+            butterknife     : "8.5.1",
+            blockcanary     : "1.5.0",
+            leakcanary      : "1.6.1",
+            constraintLayout: "1.1.2",
+            glide           : "4.7.1",
+            gson            : "2.8.5"
+    ]
+
+    dependencies = [
+            //base
+            "appcompat-v7"                 : "com.android.support:appcompat-v7:${dependVersion.support}",
+            "cardview-v7"                  : "com.android.support:cardview-v7:${dependVersion.support}",
+            "recyclerview-v7"              : "com.android.support:recyclerview-v7:${dependVersion.recyclerview}",
+            "design"                       : "com.android.support:design:${dependVersion.support}",
+            "constraint-layout"            : "com.android.support.constraint:constraint-layout:${dependVersion.constraintLayout}",
+            "support-v4"                   : "com.android.support:support-v4:${dependVersion.supportv4}",
+
+            //ui
+            "material-calendarview"        : "com.prolificinteractive:material-calendarview:1.4.0",
+            "materialsearchview"           : "com.miguelcatalan:materialsearchview:1.4.0",
+            "multiline-collapsingtoolbar"  : "net.opacapp:multiline-collapsingtoolbar:1.3.1",
+            "PhotoView"                    : "com.github.chrisbanes:PhotoView:1.3.0",
+            "glide-transformations"        : "jp.wasabeef:glide-transformations:1.2.1",
+            "html-textview"                : "org.sufficientlysecure:html-textview:3.1",
+            "CustomViewBgUi"               : "com.github.ithedan:CustomViewBgUi:v1.0",
+            "BaseRecyclerViewAdapterHelper": "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.41",
+            "SmartTable"                   : "com.github.huangyanbin:SmartTable:2.2.0",
+            "align-text-view"              : "me.codeboy.android:align-text-view:2.3.2",
+
+            //rx
+            "rxjava"                       : "io.reactivex.rxjava2:rxjava:2.1.17",
+            "rxandroid"                    : "io.reactivex.rxjava2:rxandroid:2.0.2",
+            "rxpermissions"                : "com.tbruyelle.rxpermissions2:rxpermissions:0.9.3@aar",
+
+            //network
+            "gson"                         : "com.google.code.gson:gson:${dependVersion.gson}",
+            "retrofit"                     : "com.squareup.retrofit2:retrofit:${dependVersion.retrofit}",
+            "retrofit-converter-gson"      : "com.squareup.retrofit2:converter-gson:${dependVersion.retrofit}",
+            "retrofit-adapter-rxjava2"     : "com.squareup.retrofit2:adapter-rxjava2:${dependVersion.retrofit}",
+            "okhttp"                       : "com.squareup.okhttp3:okhttp:${dependVersion.okhttp}",
+            "okhttp-logging-interceptor"   : "com.squareup.okhttp3:logging-interceptor:${dependVersion.okhttp}",
+            "glide"                        : "com.github.bumptech.glide:glide:${dependVersion.glide}",
+            "glide-compiler"               : "com.github.bumptech.glide:compiler:${dependVersion.glide}",
+            "glide-okhttp3-integration"    : "com.github.bumptech.glide:okhttp3-integration:1.4.0@aar",
+            "jsoup"                        : "org.jsoup:jsoup:1.10.1",
+
+            //di
+            "dagger"                       : "com.google.dagger:dagger:${dependVersion.dagger2}",
+            "dagger-compiler"              : "com.google.dagger:dagger-compiler:${dependVersion.dagger2}",
+            "butterknife"                  : "com.jakewharton:butterknife:${dependVersion.butterknife}",
+            "butterknife-compiler"         : "com.jakewharton:butterknife-compiler:${dependVersion.butterknife}",
+            "annotation"                   : "org.glassfish:javax.annotation:10.0-b28",
+
+            //other
+            "multidex"                     : "com.android.support:multidex:1.0.1",
+            "logger"                       : "com.orhanobut:logger:1.15",
+            "fragmentation"                : "me.yokeyword:fragmentation:1.3.6",
+            "crashreport"                  : "com.tencent.bugly:crashreport:latest.release",
+            "nativecrashreport"            : "com.tencent.bugly:nativecrashreport:latest.release",
+
+            //canary
+            "blockcanary-android"          : "com.github.markzhai:blockcanary-android:${dependVersion.blockcanary}",
+            "blockcanary-no-op"            : "com.github.markzhai:blockcanary-no-op:${dependVersion.blockcanary}",
+            "leakcanary-android"           : "com.squareup.leakcanary:leakcanary-android:${dependVersion.leakcanary}",
+            "leakcanary-android-no-op"     : "com.squareup.leakcanary:leakcanary-android-no-op:${dependVersion.leakcanary}",
+            "leakcanary-support-fragment"  : "com.squareup.leakcanary:leakcanary-support-fragment:${dependVersion.leakcanary}"
+    ]
+}

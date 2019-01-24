@@ -1,0 +1,5 @@
+io.vov.vitamio
+int color transparent 0x7f060001
+int drawable ic_launcher 0x7f090001
+int string VideoView_error_button 0x7f150001
+int string VideoView_error_title 0x7f150002

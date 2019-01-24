@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+     <com.my51c.see51.widget.PinnedSectionListView
+           android:id="@+id/pslv_content"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:cacheColorHint="@color/transparent"
+           android:divider="#CFCFCF"
+           android:dividerHeight="1dp"
+           android:footerDividersEnabled="false"
+           android:headerDividersEnabled="false"
+           android:listSelector="@color/transparent"
+           android:scrollbars="none" />
+    <LinearLayout
+        android:id="@+id/emptyview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/text_gray_v1_3_0"
+            android:layout_marginTop="30dp"
+            android:text="暂无告警信息"/>
+    </LinearLayout>
+</FrameLayout>

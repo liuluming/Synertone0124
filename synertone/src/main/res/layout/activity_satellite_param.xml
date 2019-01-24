@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+    <include layout="@layout/top_bar_layout_right" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:divider="@drawable/shape_divider"
+        android:showDividers="middle">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_100PX"
+            android:background="#E0E0E0"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/bar_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@string/myfont"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="对星"
+                android:textColor="@color/fontcolor"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_100PX"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_10PX"
+                android:layout_weight="5"
+                android:textColor="@color/modemcolor"
+                android:text="锁定"
+                android:textSize="@dimen/DIMEN_30PX" />
+            <ImageView
+                android:id="@+id/iv_choose_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_100PX"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_10PX"
+                android:layout_weight="1"
+                android:textColor="@color/modemcolor"
+                android:text="最大电平值"
+                android:textSize="@dimen/DIMEN_30PX" />
+            <TextView
+                android:id="@+id/tv_max_level"
+                android:layout_width="@dimen/DIMEN_180PX"
+                android:layout_height="@dimen/DIMEN_70PX"
+                android:layout_marginRight="@dimen/DIMEN_10PX"
+                android:gravity="center"
+                android:textColor="@color/modemcolor"
+                android:text="0 dB"
+                android:textSize="@dimen/DIMEN_30PX" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_100PX"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_10PX"
+                android:layout_weight="1"
+                android:textColor="@color/modemcolor"
+                android:text="当前电平值"
+                android:textSize="@dimen/DIMEN_30PX" />
+
+            <TextView
+                android:id="@+id/tv_current_level"
+                android:layout_width="@dimen/DIMEN_180PX"
+                android:layout_height="@dimen/DIMEN_70PX"
+                android:layout_marginRight="@dimen/DIMEN_10PX"
+                android:gravity="center"
+                android:textColor="@color/modemcolor"
+                android:text="0 dB"
+                android:textSize="@dimen/DIMEN_30PX" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_1PX"
+            android:layout_gravity="center"
+            android:background="#CFCFCF" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/DIMEN_20PX"
+            android:layout_marginTop="50dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_prompt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="注意：对星成功，单击“下一步”启动调制解调器安装"
+                android:textColor="#FF0000"
+                android:textSize="@dimen/DIMEN_25PX" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

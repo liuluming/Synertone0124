@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bar_height"
+    android:clickable="true"
+    android:background="#3399ff"
+    tools:showIn="@layout/personal_activity">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:src="@drawable/running_statu_icon_back" />
+
+    <TextView
+        android:id="@+id/tv_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_back"
+        android:text="个人中心"
+        android:textColor="#fff"
+        android:fontFamily="@string/myfont"
+        android:textSize="@dimen/DIMEN_34PX" />
+    <TextView
+        android:id="@+id/tv_right_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/_save"
+        android:textColor="#fff"
+        android:fontFamily="@string/myfont"
+        android:textSize="@dimen/DIMEN_34PX"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/mapBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/shap_map_btn"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

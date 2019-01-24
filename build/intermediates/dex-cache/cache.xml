@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\exploded-aar\src-app\pullToRefreshLibrary\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2c667714141924492671afde49e74375b7b26a10">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\src-app-pullToRefreshLibrary-unspecified_7e79db4e432a51e7a259c3ba16e373916e1ce89d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\libs\baidumapapi_util_v3_6_1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="0f0b934deaefab0513860d85cd1f4bcd83fc1003">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\baidumapapi_util_v3_6_1_c16c1b856638d63146b5e5652f58b43ada1e905a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\libs\android-support-v13.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d3737abe01346bf9b0b16273b18b85abfd58d8c7">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\android-support-v13_94676adb0b568108646f81bc9b4ea176bbb42d67.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\libs\zxing.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e88c14e6e7daa0fa65172a62b54ee6a16ff4162d">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\zxing_87ab10046d9531e202069ed01bc0afb3a1086a2e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\libs\yunzhixun_tcp_SDK_ver_3.0.5.3_release.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6dedda915a36963c2e5aabc1af1e1506ad1a61ee">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\yunzhixun_tcp_SDK_ver_3.0.5.3_release_8f262aa3b70c9154396bbb73b723f2879d8251e6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\snt1206\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.1\2e66da15851f9f5b5079228f856c2f090ba98c38\gson-2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2e66da15851f9f5b5079228f856c2f090ba98c38">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\gson-2.1_e85ea87b41b0c6cfb1b4520fbb7c81b139a7bdca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\libs\android-logging-log4j-1.0.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="bee823e6955d3a5806700026f838ebbca907ac7a">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\android-logging-log4j-1.0.3_7ed659f0dfdec060aa05e90195d811fc2072f568.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\libs\baidumapapi_base_v3_6_1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="683a7fe2d903826fc8ff46832b0be142d4b6576d">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\baidumapapi_base_v3_6_1_ad28ea2f32e78ab5945ce7ef249df1fb1bd2826d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\libs\volley.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="4a94601db9bdfb7dc60efabb3dea91a0675f591d">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\volley_842f663014e8909c817f11b3ec3bdb283db57d1f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\exploded-aar\com.actionbarsherlock\actionbarsherlock\4.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="af64527b748983a75de9c0756e9768b56b240a49">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\com.actionbarsherlock-actionbarsherlock-4.4.0_891bfac904e90c05a0b34455772ce52c67fa60bf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\exploded-aar\src-app\common-util\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e00cbb706041ac4b4d5bc8cca3160b4db4217a64">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\src-app-common-util-unspecified_6276c2ac27c8b1ab3756fc5acfa7cdb296864bcd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\libs\xUtils-2.6.14.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f10c51f3e0732fdeefe6e104279a58e275879b6c">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\xUtils-2.6.14_2606ff0c9df2e73976bbf27a26aeb8160387e1cf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\exploded-aar\src-app\viewbguilib\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="89c0c620de403e3652e4bbdacda4e02b2dd1b08c">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\src-app-viewbguilib-unspecified_8ff9e16d4edf2a06c66999e9980b67d629923a0a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\exploded-aar\src-app\slidingmenu_library\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="860cd46bf3d042467cbd4c218fa0e898f38b8a7d">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\src-app-slidingmenu_library-unspecified_5589b1a5bca49e6a841484e0d4330df1c55b0a3b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\exploded-aar\src-app\ripplelayoutmaster\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="45c1a636474bf00df65338c973d3dcb2aaf6a59f">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\src-app-ripplelayoutmaster-unspecified_ad4b9d5b4bd2b5c0c270efc713a6b3fd108434a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\libs\achartengine-1.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9932e3fb9fbe54e80873e77f72a99f79e33b3250">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\achartengine-1.1.0_f8dd6e0346ba18bd331b87fee3a168b27dd081f8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\libs\locSDK_6.13.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2cdb37444b41b42e1ce5a8a27e5d3c22e1c57479">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\locSDK_6.13_867a690ba44bd968dcf385426ae2aaee8a765b00.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\libs\lib51see.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b8c18f56990749bddd0bcfd3c6dc25a3c25f59d6">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\lib51see_6a3a145b3990c570994abb2cfaeb1d64d0957ba0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\exploded-aar\src-app\initActivity\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="98c0fdf12dab451682397e4bec8acbdefd6c80fc">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\src-app-initActivity-unspecified_7e2ef0ba40bd3eb2e1b48aa0f8a346da09859e90.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\libs\aacdecoder-android-0.6.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="42f88cba8d005301d5aa816949da990a54ea2653">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\aacdecoder-android-0.6.1_6d055104d6313893b34a507692add1f811078a9d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\libs\baidumapapi_cloud_v3_6_1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="387e4f255e65a144c164e3c67a794e9ad2445c2d">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\baidumapapi_cloud_v3_6_1_d2a48244e0dd39bf8eac41831328a8e14d59060f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\libs\log4j-1.2.17.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="4f90475694c41965c9a0c8bac53ea5c690dea446">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\log4j-1.2.17_dac8f836f6497747392c1dd91045a08b97c9a531.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\libs\ForwardingDevelopmentTools_ver_1.0_release.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f2b86b8843ad0baf77cd6b44b9c975b2b83ba8a1">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\ForwardingDevelopmentTools_ver_1.0_release_6b7094c0b46da3ebf9c52b8afdba2bf17a4a6eb7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\exploded-aar\src-app\ripplelayoutmaster\unspecified\jars\libs\nineoldandroids-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f086e018e187da53a1432c188023c86d1fa3ff73">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\nineoldandroids-2.4.0_1e47c09cd7a3897666a0a8519c604c25b37fd7b4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\libs\bugly_1.2.7_release.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="abba7552d1be551217261ccf2074afdd7e702df9">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\bugly_1.2.7_release_9e8f86877cebf0fd729e559bddd101cd4a36ce4b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\libs\uk.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d080d04a0b24390b854aa5481f1c2cc9e8c0be8a">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\uk_e8115191c29256edf81909cb38eea61d33d4bbef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\libs\baidumapapi_radar_v3_6_1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="1798aaeab5d68706f7e5be9399590f1b41df5053">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\baidumapapi_radar_v3_6_1_ab879c86c48296f437d4a0cab2f085a9ed7d7828.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\libs\yunzhixun_video_SDK_v2.0.1.3_release.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="914d215b6c346159436d5bbd6d4dc88eb360b27b">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\yunzhixun_video_SDK_v2.0.1.3_release_b345e4cc6c4ebbcec4440bba66ec4d6930b8c23b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\libs\baidumapapi_map_v3_6_1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="23ebff6260f4903de73a88f877f7c32025205c53">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\baidumapapi_map_v3_6_1_71bce00fccc30798e9c9b7f2cc3a50c9c0afba9f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\libs\yunzhixun_IM_SDK_ver_3.0.4.5_release.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="ff532667b03e4875c43bcfc1aea1ab42fafbb5d3">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\yunzhixun_IM_SDK_ver_3.0.4.5_release_6eed6529b544952093857f8b22d0ecb23eb5a4a6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\libs\edit_lib.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3bff1c00521d9e750278c1abd65d1c614b0c37fb">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\edit_lib_e9db250318d4e0aa65f2dd80f2a8382c62359792.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\libs\litepal-1.5.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="92d15a276333dfe6d833bcf6c05afa5ce7c06662">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\litepal-1.5.1_53472ab082331fa70de4a005e331709e202f7b20.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\libs\baidumapapi_search_v3_6_1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="ae35daa343eece79419b1491c64ffe84c3707c50">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\baidumapapi_search_v3_6_1_ca221148e1b74b5065a2033c805ffa8940070eba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\libs\voaacencoder.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="61f6f934b603f872d37d5c5096921c759e216304">
+        <dex dex="D:\APP\WYZS\02_Android\CODE\trunk\STUDIO\v_3_1\src-app\synertone\build\intermediates\pre-dexed\debug\voaacencoder_0b114e0ca0b824efb91faa45b59b92f3c90974ee.jar" />
+    </item>
+
+</items>

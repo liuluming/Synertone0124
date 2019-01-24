@@ -1,0 +1,15 @@
+int attr color 0x7f040001
+int attr duration 0x7f040002
+int attr radius 0x7f040003
+int attr rippleNums 0x7f040004
+int attr scale 0x7f040005
+int attr strokeWidth 0x7f040006
+int drawable ic_launcher 0x7f090001
+int string app_name 0x7f150001
+int[] styleable RippleLayout { 0x7f040001, 0x7f040002, 0x7f040003, 0x7f040004, 0x7f040005, 0x7f040006 }
+int styleable RippleLayout_color 0
+int styleable RippleLayout_duration 1
+int styleable RippleLayout_radius 2
+int styleable RippleLayout_rippleNums 3
+int styleable RippleLayout_scale 4
+int styleable RippleLayout_strokeWidth 5

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/yingpanzhuangtai"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_88PX"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_58PX"
+            android:layout_weight="1"
+            android:fontFamily="@string/myfont"
+            android:text="工作状态"
+            android:textColor="@color/fontcolor"
+            android:textSize="@dimen/DIMEN_22PX" />
+
+        <TextView
+            android:id="@+id/device_corestatus_work"
+            android:layout_width="@dimen/DIMEN_120PX"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/DIMEN_32PX"
+            android:fontFamily="@string/myfont"
+            android:gravity="center"
+            android:text="良好"
+            android:textColor="@color/fontcolor"
+            android:textSize="@dimen/DIMEN_22PX" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_88PX"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DIMEN_88PX"
+            android:layout_marginLeft="@dimen/DIMEN_58PX"
+            android:layout_weight="1"
+            android:fontFamily="@string/myfont"
+            android:gravity="center_vertical"
+            android:text="分区情况"
+            android:textColor="@color/fontcolor"
+            android:textSize="@dimen/DIMEN_22PX" />
+
+        <TextView
+            android:id="@+id/device_corestatus_disknum"
+            android:layout_width="@dimen/DIMEN_120PX"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/DIMEN_32PX"
+            android:fontFamily="@string/myfont"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/fontcolor"
+            android:textSize="@dimen/DIMEN_22PX" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_88PX"
+        android:layout_marginLeft="@dimen/DIMEN_58PX"
+        android:fontFamily="@string/myfont"
+        android:gravity="center_vertical"
+        android:text="容量信息"
+        android:textColor="@color/fontcolor"
+        android:textSize="@dimen/DIMEN_22PX" />
+    <com.bin.david.form.core.SmartTable
+        android:id="@+id/st_disk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:visibility="gone"
+        android:layout_marginBottom="8dp"
+        />
+</LinearLayout>
